@@ -30,3 +30,22 @@ body {
     background-color: white;
   }
   
+/* Add borders to the table with id "targetClientTable" */
+#targetClientTable {
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto; /* Center the table */
+  }
+  
+  /* Add borders to the table cells within table with id "targetClientTable" */
+  #targetClientTable th, #targetClientTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Add background color to the table headers within table with id "targetClientTable" */
+  #targetClientTable th {
+    background-color: #f2f2f2;
+  }
+  
