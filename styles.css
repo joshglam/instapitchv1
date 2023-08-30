@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+  }
+  
+  #navbar {
+    width: 200px;
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    
+  }
+  
+  #content {
+    flex-grow: 1;
+    width: calc(100% - 200px);
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  #title, #founderSection, #productSection, #scriptsSection, #clientSection {
+    width: 100%; /* Set width to 100% */
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0; /* Remove any default margin */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  
