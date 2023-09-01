@@ -6,7 +6,7 @@ body {
   }
   
   #navbar {
-    width: 200px;
+    width: 150px;
     background-color: #333333;
     color: white;
     padding: 20px;
@@ -21,7 +21,7 @@ body {
   }
   
   #title, #founderSection, #productSection, #scriptsSection, #clientSection {
-    width: 100%; /* Set width to 100% */
+    width: 90%; /* Set width to 100% */
     padding: 20px;
     text-align: center;
     border: 1px solid #ccc;
@@ -47,5 +47,11 @@ body {
   /* Add background color to the table headers within table with id "targetClientTable" */
   #targetClientTable th {
     background-color: #f2f2f2;
+  }
+
+  .collapse {
+    display: none;
+    overflow: hidden;
+    height: 0px;
   }
   
