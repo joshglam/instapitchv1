@@ -29,10 +29,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: white;
   }
-  
-  #previous-next-add-client-buttons {
-    padding-bottom: 20px;
-  }
 
 /* Add borders to the table with id "target-client-table" */
 .target-client-info {
