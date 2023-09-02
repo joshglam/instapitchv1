@@ -13,14 +13,14 @@ body {
     
   }
   
-  #content {
+  #feed {
     flex-grow: 1;
     width: calc(100% - 200px);
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
   }
   
-  #title, #founderSection, #productSection, #scriptsSection, #clientSection {
+  #title, #founder-section, #productSection, #tools-section, #client-section {
     width: 90%; /* Set width to 100% */
     padding: 20px;
     text-align: center;
@@ -30,23 +30,27 @@ body {
     background-color: white;
   }
   
-/* Add borders to the table with id "targetClientTable" */
-#targetClientTable {
+  #previous-next-add-client-buttons {
+    padding-bottom: 20px;
+  }
+
+/* Add borders to the table with id "target-client-table" */
+.target-client-info {
     border-collapse: collapse;
     width: 75%;
     margin: auto; /* Center the table */
   }
   
-  /* Add borders to the table cells within table with id "targetClientTable" */
-  #targetClientTable th, #targetClientTable td {
+  /* Add borders to the table cells within table with id "target-client-table" */
+  .target-client-info th, .target-client-info td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
   }
   
-  /* Add background color to the table headers within table with id "targetClientTable" */
-  #targetClientTable th {
-    background-color: #f2f2f2;
+  /* Add background color to the table headers within table with id "target-client-table" */
+  .target-client-info th {
+    background-color: rgb(218, 215, 215);
   }
 
   .collapse {
@@ -55,3 +59,7 @@ body {
     height: 0px;
   }
   
+  .tools-email {
+    border: 1px solid black;
+    text-align: left;
+  }

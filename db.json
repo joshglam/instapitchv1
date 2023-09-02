@@ -1,0 +1,137 @@
+{
+    "tools": [ 
+      {
+    "emails": [
+      {
+        "id": 1,
+        "type": "Email Type: Introduction",
+        "subject": "Subject Line: Enhance Your Real Estate Presence with AI-Powered Content",
+        "body": "Hi [Client Name],\n\nI recently came across your work in the real estate sector and was genuinely impressed by your dedication to your clients. I'm [Sales Rep Name] from Rejig.AI, where we specialize in AI-driven content automation tailored for professionals like you.\n\nOur platform can help you stay top of mind with your clients by automating the content you need, without the hassle of logging in every time. Imagine posting updates just by entering your pin!\n\nWould you be available for a brief chat this week to explore how Rejig.AI can elevate your online presence?\n\nBest regards,\n[Sales Rep Name]"
+      },
+      {
+        "id": 2,
+        "type": "Email Type: Value & Explanation",
+        "subject": "Subject Line: Stay Mobile, Stay Relevant with Rejig.AI",
+        "body": "Hi [Client Name],\n\nBeing a real estate agent means you're always on the move. With Rejig.AI, we ensure your online presence moves with you. Our platform is designed to automate content, keeping you top of mind with clients, even when you're on the go.\n\nPlus, with our recent integration with Instagram and continuous feature updates, we're always enhancing the experience for professionals like you.\n\nLet's discuss how we can streamline your content strategy. Are you available for a call this week?\n\nBest,\n[Sales Rep Name]"
+      },
+      {
+        "id": 3,
+        "type": "Email Type: Company Expertise and Value",
+        "subject": "Subject Line: AI-Powered Content for Real Estate Pros",
+        "body": "Hi [Client Name],\n\nAt Rejig.AI, we pride ourselves on offering unmatched AI-driven content solutions tailored for the real estate sector. Our platform is designed to help agents like you maintain a consistent online presence, ensuring you're always top of mind with clients.\n\nOne of our agents recently shared how they love posting just by entering their pin and approving it. Simple, fast, and efficient.\n\nWould you be open to a brief discussion on how Rejig.AI can support your content needs?\n\nBest,\n[Sales Rep Name]"
+      },
+      {
+        "id": 4,
+        "type": "Email Type: Final Follow-Up",
+        "subject": "Subject Line: Last Chance to Elevate Your Real Estate Content Game",
+        "body": "Hi [Client Name],\n\nI wanted to touch base one last time about how Rejig.AI can revolutionize your content strategy. Our platform is designed to help real estate agents like you automate content, ensuring you're always in touch with your clients.\n\nIf you're still interested in exploring how we can assist, please let me know a suitable time for a brief chat this week.\n\nBest,\n[Sales Rep Name]"
+      }
+    ]
+  },
+
+  {
+    "callScripts": [
+        {
+          "id": 1,
+          "type": "Introduction",
+          "script": "Hi [owner's name], this is [Sales Rep Name]. How are you doing today? I was looking at your Facebook/IG and noticed that you had [x] followers. That's really impressive for a realtor!"
+        },
+        {
+          "id": 2,
+          "type": "Reason for the call",
+          "script": "The reason for my call is that I noticed your content is great but there’s a big gap in the frequency of your posts. We created a solution for that using AI and I’d like to get your feedback. Are you in front of a computer?"
+        }
+      ]
+    },
+
+    {
+      "contacts": [
+        {
+          "AccountOwner": null,
+          "Industry": "real estate",
+          "BusinessName": "Cushman & Wakefield",
+          "Facebook": "https://www.facebook.com/cushmanwakefield/",
+          "Instagram": "https://instagram.com/cushwake/",
+          "Website": "http://www.cushmanwakefield.com/en/offices/phoenix",
+          "Blog": null,
+          "Yelp": null,
+          "GoogleMyBusiness": null,
+          "FirstName": "Herm",
+          "LastName": "Franks",
+          "Phone": "(602) 258-4156",
+          "Email": "herm.franks@cushwake.com",
+          "Notes": null,
+          "NotesFromEngineers": null,
+          "OrDate": null,
+          "Outreach": null,
+          "FollowUp": "FALSE",
+          "FollowUpNotes": null
+        },
+        {
+          "AccountOwner": null,
+          "Industry": "real estate",
+          "BusinessName": "Melvin White, Coldwell Banker Realty",
+          "Facebook": "https://www.facebook.com/melvintheneighborhoodexpert/",
+          "Instagram": "https://instagram.com/melvinwhite2018/",
+          "Website": "http://melvinwhite-cbarizona.sites.cbmoxi.com/",
+          "Blog": null,
+          "Yelp": null,
+          "GoogleMyBusiness": null,
+          "FirstName": "Melvin",
+          "LastName": "White",
+          "Phone": "(739) 611-0660",
+          "Email": "mwhite@a-z-realtor.com",
+          "Notes": null,
+          "NotesFromEngineers": null,
+          "OrDate": null,
+          "Outreach": null,
+          "FollowUp": "FALSE",
+          "FollowUpNotes": null
+        },
+        {
+          "AccountOwner": null,
+          "Industry": "real estate",
+          "BusinessName": "David Oesterle - Realtor, RE/MAX Excalibur",
+          "Facebook": "https://www.facebook.com/luxuryhomespecialist/",
+          "Instagram": "https://instagram.com/davidoesterle_remax/",
+          "Website": "http://www.hometeamaz.com/",
+          "Blog": null,
+          "Yelp": null,
+          "GoogleMyBusiness": null,
+          "FirstName": "Mark",
+          "LastName": "Skibowski",
+          "Phone": "(602) 920-6888",
+          "Email": "markskibowski@gmail.com",
+          "Notes": null,
+          "NotesFromEngineers": null,
+          "OrDate": null,
+          "Outreach": null,
+          "FollowUp": "FALSE",
+          "FollowUpNotes": null
+        },
+        {
+          "AccountOwner": null,
+          "Industry": "real estate",
+          "BusinessName": "Laura Jorden",
+          "Facebook": "https://www.facebook.com/scottsdalerealestateluxury/",
+          "Instagram": "https://instagram.com/lmuzzy90/",
+          "Website": "https://www.laurajorden.com/contact/",
+          "Blog": null,
+          "Yelp": null,
+          "GoogleMyBusiness": null,
+          "FirstName": "Laura",
+          "LastName": "Jorden",
+          "Phone": "(480) 734-0870",
+          "Email": "laura.jorden@russlyon.com",
+          "Notes": null,
+          "NotesFromEngineers": null,
+          "OrDate": null,
+          "Outreach": null,
+          "FollowUp": "FALSE",
+          "FollowUpNotes": null
+        }
+      ]
+    }
+    ]
+  }
+  

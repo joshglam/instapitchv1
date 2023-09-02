@@ -4,93 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <script defer src="./index.js"></script>
+    <title>InstaPitch.ai</title>
 </head>
 
-
 <body>
-    <nav id="navbar">
-        <p>Welcome Video</p>
-        <p>Product Video</p>
-        <!-- navigation bar on the left hand side -->
-        <!-- includes founder video & product video -->
-    </nav>
-    <div id="content" >
+  <nav id="navbar">
+    <!-- navigation bar on the left hand side -->  
+    <p>Welcome Video</p>
+    <p>Product Video</p>
+  </nav>
+    <div id="feed" >
         <h1 id="title" >
             InstaPitch.ai
             <!-- title -->
         </h1>
-        <section id="founderSection">
-          <!-- Intro to Founder -->
-          <p>Welcome to <span class="companyName">Insert Input</span></p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/FOUNDERS_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <section id="founder-section">
+          <!-- Welcome message from the founder -->
+          <h2>Welcome to <span class="company-name">Company Name</span></h2>
+          <!-- <iframe id="founder-section-video" width="560" height="315" src="https://www.youtube.com/embed/FOUNDERS_VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
           <br>
           <button>Completed</button>
       </section>
       <section id="productSection">
-          <!-- Product Information -->
-          <p>How does <span class="companyName">Insert Input</span> work?</p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/PRODUCTS_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          <!-- Instructional video to explain how the product works and how to people sign up -->
+          <h2>How does <span class="company-name">Company Name</span> work?</h2>
+          <!-- //<iframe id="product-section-video" width="560" height="315" src="https://www.youtube.com/embed/PRODUCTS_VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
           <br>
           <button>Completed</button>
       </section>
-      <section id="scriptsSection">
-            <!-- Multiple scripts/templates -->
-            <p>Tools</p>
-            <button>Email</button>
-            <button>Linkedin</button>
-            <button>SMS</button>
-            <button>Cold Call</button>
-            <button>Demo</button>
-            <button>Recorded Calls</button>
-            <br>
-            <div>
-              <p>
-                test
-                </p>
-            </div>
-        </section>
-        <section id="clientSection">
-            <!-- Target Client Data -->
-            <p>Contact Database</p>
-            <table id="targetClientTable">
+      <section id="client-section">
+        <!-- Target Client Data -->
+        <h2>Target Client</h2>
+        <div id="previous-next-add-client-buttons">
+        <!-- changes target client info to current id +1-->
+         <button id="previous-client">Previous</button>
+         <!-- changes target client info to minus current id  1-->
+         <button id="next-client">Next</button>
+         <!-- deletes target client info and opens form -->
+         <button id="add-new-client">Add New</button>
+        </div>
+        <table class="target-client-info">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Links</th>
+                <th>Current Stage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- this will be from the database -->
+                <td id="client-first-last-name">First Last</td>
+                <td id="client-email">xyz@gmail.com</td>
+                <td id="client phone">602-345-3456</td>
+                <td>
+                    <p>
+                      <!-- I think this could be done via javascript to avoid unesscary links -->
+                      <a id="client-website" href="www.google.com"><span>Website<span></a>
+                      <a id="client-instagram" href="www.google.com"><span>Instagram<span></a>
+                      <a id="client-facebook" href="www.google.com"><span>Facebook<span></a>
+                      <a id="client-blog" href="www.google.com"><span>Blog<span></a>
+                    </p>
+                </td>
+                <td>
+                  dropdown
+                </td>
+              </tr>
+              <table class="target-client-info">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Links</th>
+                    <th>Date</th>
+                    <th>Recent Activity</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>First & Last</td>
-                    <td>xyz@gmail.com</td>
-                    <td>602-345-3456</td>
-                    <td>
-                        <p>
-                          <a href="www.google.com"><span>Website<span></a>
-                          <a href="www.google.com"><span>Instagram<span></a>
-                          <a href="www.google.com"><span>Facebook<span></a>
-                          <a href="www.google.com"><span>Blog<span></a>
-                    </td>
+                                            <td>8/30</td>
+                    <td>the call went great they want to sign up</td>
+                    <!-- this needs to be made into a dropdown that can post to database -->
                   </tr>
-                  <table id="targetClientTable">
-                    <thead>
-                      <tr>
-                        <th>Date</th>
-                        <th>Recent Activity</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                                                <td>8/30</td>
-                        <td>the call went great they want to sign up</td>
-                      </tr>
-                      <!-- You can add more rows here -->
-                    </tbody>
-                  </table>
-                  
+                  <!-- You can add more rows here -->
+                </tbody>
+              </table>
+              
+    </section>
+      <section id="tools-section">
+            <!-- Tools -->
+            <h2>Tools</h2>
+            <button id="emails">Emails</button>
+            <button id="linkedin-msgs">Linkedin Msgs</button>
+            <button id="sms">SMS</button>
+            <button id="cold-call">Cold Call</button>
+            <button id="demo">Demo</button>
+            <button id="recorded-calls">Recorded Calls</button>
+            <br>
+            <div id="tools-display">
+            </div>
         </section>
     </div>
   </body>
