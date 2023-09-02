@@ -1,3 +1,32 @@
+const navbar = document.querySelector("#navbar")
+
+//collapses and uncollapses sections
+const founderButton = document.querySelector("#founder-button")
+const productButton = document.querySelector("#product-button")
+const recordedButton = document.querySelector("#recorded-button")
+
+collapseButton(founderButton)
+collapseButton(productButton)
+collapseButton(recordedButton)
+
+function collapseButton(button) {
+    button.addEventListener("click", e => {
+        const inSection = e.target.parentElement
+        const createTitle = document.createElement("p")
+        const h2 = inSection.querySelector("h2")
+        
+        createTitle.textContent = h2.textContent
+        navbar.append(createTitle)
+        inSection.className = "collapse"
+        
+        createTitle.addEventListener("click", e => {
+            inSection.className = ""
+            createTitle.remove()
+        })
+    })
+}
+
+// uses fetch to display email in tools
 const toolsDisplay = document.querySelector("#tools-display")
 const toolsEmailButton = document.querySelector("#emails")
 const toolsExplination = document.querySelector("#tools-display-explination")
@@ -31,8 +60,3 @@ fetch("http://localhost:3000/tools")
     })
 })
 
-
-// "id": 1,
-// "type": "Introduction",
-// "subject": "Enhance Your Real Estate Presence with AI-Powered Content",
-// "body": "Hi [Client Name],\n\nI recently came across your work in the

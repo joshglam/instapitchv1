@@ -20,7 +20,7 @@ body {
     padding: 0; /* Remove any default padding */
   }
   
-  #title, #founder-section, #productSection, #tools-section, #client-section {
+  #title, #founder, #product, #tools, #client,#recorded-calls {
     width: 90%; /* Set width to 100% */
     padding: 20px;
     text-align: center;
