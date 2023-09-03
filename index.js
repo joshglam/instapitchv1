@@ -26,7 +26,8 @@ function collapseButton(button) {
     })
 }
 
-
+//displays target client
+const displayClientName = document.querySelector("#client-first-last-name")
 
 
 
@@ -41,6 +42,56 @@ const toolsContainer = document.querySelector("#tools-container")
 fetch("http://localhost:3000/tools")
 .then(res => res.json())
 .then(tools => {
+    //displays client
+    const displayClientName = document.querySelector("#client-first-last-name")
+    const displayClientEmail = document.querySelector("#client-email")
+    const displayClientPhone = document.querySelector("#client-phone")
+    const displayClientWebsite = document.querySelector("#client-website")
+    const displayClientInsta = document.querySelector("#client-instagram")
+    const displayClientFb = document.querySelector("#client-facebook")
+    const displayClientBlog = document.querySelector("#client-blog")
+    const displayClientStage = document.querySelector("#client-stage")
+    
+
+    const contactInfo = tools[2].contacts[0]
+    displayClientName.textContent =  `${contactInfo.FirstName} ${contactInfo.LastName}`
+    displayClientEmail.textContent = contactInfo.Email
+    displayClientPhone.textContent = contactInfo.Phone
+    displayClientWebsite.href = contactInfo.Website
+    displayClientInsta.href = contactInfo.Instagram
+    displayClientFb.href = contactInfo.Facebook
+    displayClientBlog.href = contactInfo.Blog 
+    //needs to be made stilldisplayClientStage
+
+
+
+
+    
+    //switches to next contact
+    
+    // {
+    //     "AccountOwner": null,
+    //     "Industry": "real estate",
+    //     "BusinessName": "Cushman & Wakefield",
+    //     "Facebook": "https://www.facebook.com/cushmanwakefield/",
+    //     "Instagram": "https://instagram.com/cushwake/",
+    //     "Website": "http://www.cushmanwakefield.com/en/offices/phoenix",
+    //     "Blog": null,
+    //     "Yelp": null,
+    //     "GoogleMyBusiness": null,
+    //     "FirstName": "Herm",
+    //     "LastName": "Franks",
+    //     "Phone": "(602) 258-4156",
+    //     "Email": "herm.franks@cushwake.com",
+    //     "Notes": null,
+    //     "NotesFromEngineers": null,
+    //     "OrDate": null,
+    //     "Outreach": null,
+    //     "FollowUp": "FALSE",
+    //     "FollowUpNotes": null
+    //   },
+
+    // emails fetched
     const emails = tools[0].emails
     toolsEmailButton.addEventListener("click", e =>{
         
@@ -51,7 +102,6 @@ fetch("http://localhost:3000/tools")
         toolsDisplay.append(newToolsContainer)
 
         emails.forEach(email => {
-            console.log("hello!")
             const createDiv = document.createElement("div")
             const createType = document.createElement("p")
             const createSubject = document.createElement("p")
@@ -68,7 +118,7 @@ fetch("http://localhost:3000/tools")
             createDiv.append(createType, createSubject, createBody)
         })
     })
-
+    // call scripts
     const coldCallButton = document.querySelector("#cold-call")
     const callScript = tools[1].callScripts
 
@@ -96,4 +146,6 @@ fetch("http://localhost:3000/tools")
             createDiv.append(createType, createScript)
         })
     })
+
+    
 })
